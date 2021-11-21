@@ -21,7 +21,7 @@ const movie_len = movies.length;
 
 // Buat fungsi untuk memberi rekomendasi film
 exports.recommend = async function recommend(userId) {
-  let user = tf.fiil([movie_len], Number(userId));
+  let user = tf.fill([movie_len], Number(userId));
   let movie_in_js_array = movie_arr.arraySync();
   await loadModel();
   console.log(`Recommending for user : ${userId}`);
